@@ -107,7 +107,12 @@ mkdir pretrained_model && \
 cd pretrained_model && \
 wget --output-document faster_rcnn_coco.pth https://www.dropbox.com/s/y171ze1sdw1o2ph/faster_rcnn_1_6_9771.pth?dl=0 && \
 cd lib && \
-sh make.sh
+sh make.sh && \
+cd ../..
 ```
-
+After that, to get a caption from an image, use the `demo_simple(obj_det_model, model, img_path_name` function within `demo_shanshan_copy.py`. For a simple demo, run
+```
+cd NeuralBabyTalk
+python demo_shanshan_copy.py  --path_opt cfgs/normal_coco_res101.yml --batch_size 1 --num_workers 0 --beam_size 3 --start_from save/normal_coco_1024_adam
+```
 
