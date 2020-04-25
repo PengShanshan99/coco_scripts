@@ -117,4 +117,4 @@ python demo_shanshan_copy.py  --path_opt cfgs/normal_coco_res101.yml --batch_siz
 ```
 To check the model performance on validation set, run
 
-```python main.py --path_opt cfgs/normal_coco_res101.yml --batch_size 20 --cuda True --num_workers 0 --max_epoch 30 --inference_only True --beam_size 3 --start_from save/normal_coco_1024_adam
+```python main.py --path_opt cfgs/normal_coco_res101.yml --batch_size 20 --cuda True --num_workers 0 --max_epoch 30 --inference_only True --beam_size 3 --start_from save/normal_coco_1024_adam```
