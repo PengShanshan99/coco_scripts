@@ -1,6 +1,7 @@
 # coco_scripts
 You do not need to clone this repo itself. Instead, run the following commands to setup your working directory and environment:
-```git clone https://github.com/jiasenlu/NeuralBabyTalk.git
+```
+git clone https://github.com/jiasenlu/NeuralBabyTalk.git
 cd NeuralBabyTalk
 conda install pytorch=0.4.1 cuda90 -c pytorch
 apt-get update && \
