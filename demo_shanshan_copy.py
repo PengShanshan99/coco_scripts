@@ -188,9 +188,11 @@ if __name__ == '__main__':
     	optimizer = optim.Adamax(params)
 
 #     img_name = 'test_images/COCO_val2014_000000184791.jpg'
-    pics = ['COCO_val2014_000000184791.jpg','COCO_val2014_000000550529.jpg',
-            'COCO_val2014_000000579664.jpg','COCO_val2014_000000348881.jpg','COCO_val2014_000000560623.jpg']
-    obj_det_model = prep_model('../faster-rcnn.pytorch/data_fr/pretrained_model/faster_rcnn_coco.pth')
-    for pic in pics:
-        sents = demo_simple(obj_det_model, model, 'test_images/'+pic)
-        print(sents)
+#     pics = ['COCO_val2014_000000184791.jpg','COCO_val2014_000000550529.jpg',
+#             'COCO_val2014_000000579664.jpg','COCO_val2014_000000348881.jpg','COCO_val2014_000000560623.jpg']
+#     obj_det_model = prep_model('../faster-rcnn.pytorch/data_fr/pretrained_model/faster_rcnn_coco.pth')
+#     for pic in pics:
+#         sents = demo_simple(obj_det_model, model, 'test_images/'+pic)
+#         print(sents)
+    sents = demo_simple(obj_det_model, model, 'data/coco/images/val2014/COCO_val2014_000000184791.jpg')
+    print(sents)
