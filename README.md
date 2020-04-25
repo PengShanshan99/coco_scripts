@@ -115,4 +115,6 @@ After that, to get a caption from an image, use the `demo_simple(obj_det_model, 
 cd NeuralBabyTalk
 python demo_shanshan_copy.py  --path_opt cfgs/normal_coco_res101.yml --batch_size 1 --num_workers 0 --beam_size 3 --start_from save/normal_coco_1024_adam
 ```
+To check the model performance on validation set, run
 
+```python main.py --path_opt cfgs/normal_coco_res101.yml --batch_size 20 --cuda True --num_workers 0 --max_epoch 30 --inference_only True --beam_size 3 --start_from save/normal_coco_1024_adam
