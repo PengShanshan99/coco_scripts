@@ -84,7 +84,7 @@ wget http://images.cocodataset.org/zips/val2014.zip && \
 unzip train2014.zip && \
 unzip val2014.zip
     
-cd ../../misc && \
+cd ../../../misc && \
 rm AttModel.py && \
 rm model.py && \
 wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/AttModel.py && \
