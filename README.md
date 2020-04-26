@@ -57,7 +57,8 @@ cd ../.. && \
     unzip normal_coco_1024_adam.zip && \
     rm normal_coco_1024_adam.zip
     
-python prepro/prepro_dic_coco.py \
+cd .. && \
+    python prepro/prepro_dic_coco.py \
     --input_json data/coco/dataset_coco.json \
     --split normal \
     --output_dic_json data/coco/dic_coco.json \
