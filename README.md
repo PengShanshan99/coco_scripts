@@ -110,7 +110,7 @@ cd data_fr && \
 mkdir pretrained_model && \
 cd pretrained_model && \
 wget --output-document faster_rcnn_coco.pth https://www.dropbox.com/s/y171ze1sdw1o2ph/faster_rcnn_1_6_9771.pth?dl=0 && \
-cd lib && \
+cd ../../lib && \
 sh make.sh && \
 cd ../..
 ```
