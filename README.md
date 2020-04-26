@@ -3,7 +3,7 @@ You do not need to clone this repo itself. Instead, run the following commands t
 ```
 git clone https://github.com/jiasenlu/NeuralBabyTalk.git
 cd NeuralBabyTalk
-conda install pytorch=0.4.1 cuda90 -c pytorch
+conda install pytorch=0.4.1 cuda90 -c pytorch # modify the cuda version to match your nvcc --version output
 apt-get update && \
     apt-get install -y \
     ant \
@@ -92,7 +92,9 @@ wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/model.
 cd .. && \
 rm main.py && \
 wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/main.py && \
-wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/demo_shanshan_copy.py
+wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/demo_shanshan_copy.py && \
+wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/backup.py && \
+wget https://raw.githubusercontent.com/PengShanshan99/coco_scripts/master/integrate_demo.py
 
 cd .. && \
 git clone https://github.com/jwyang/faster-rcnn.pytorch.git && \
@@ -120,4 +122,8 @@ To check the model performance on validation set, run
 
 ```
 python main.py --path_opt cfgs/normal_coco_res101.yml --batch_size 20 --cuda True --num_workers 0 --max_epoch 30 --inference_only True --beam_size 3 --start_from save/normal_coco_1024_adam
+```
+To run the GUI, run
+```
+python backup.py  --path_opt cfgs/normal_coco_res101.yml --batch_size 1 --num_workers 0 --beam_size 3 --start_from save/normal_coco_1024_adam
 ```
