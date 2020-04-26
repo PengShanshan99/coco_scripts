@@ -74,7 +74,7 @@ cd .. && \
     --output_dic_json data/noc_coco/dic_coco.json \
     --output_cap_json data/noc_coco/cap_coco.json # if you encounter psutil._exceptions.AccessDenied error here, please add sudo before the commands
     
-cd ../data/coco && \
+cd data/coco && \
 wget http://images.cocodataset.org/annotations/annotations_trainval2014.zip && \
 unzip annotations_trainval2014.zip && \
 mkdir images && \
